@@ -33,7 +33,6 @@ jobs:
             category: aarch64
 
     runs-on: ${{ matrix.targets.os }}
-    if: startsWith(github.repository, 'LibNyanpasu')
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
